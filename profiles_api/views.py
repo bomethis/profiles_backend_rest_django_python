@@ -51,7 +51,7 @@ class HelloApiView(APIView):
 
 class HelloViewSet(viewsets.ViewSet):
     """Test API ViewSet"""
-    serializer_class = serializers.HellowSerializer
+    serializer_class = serializers.HelloSerializer
 
 
     def list(self, request):
@@ -95,4 +95,4 @@ class HelloViewSet(viewsets.ViewSet):
 
     def destroy(self, request, pk=None):
         """Handle removing an object"""
-        return Response(['http_method': 'DELETE'])
+        return Response({'http_method': 'DELETE'})

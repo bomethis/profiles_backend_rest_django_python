@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework import viewsets
 
 from profiles_api import serializers
-
+from profiles_api import models
 
 class HelloApiView(APIView):
     """Test API View"""
